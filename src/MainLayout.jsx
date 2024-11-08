@@ -5,9 +5,11 @@ import Footer from "./components/Footer";
 const MainLayout = () => {
 
     return (
-        <div className="font-manrope">
+        <div>
             <Navbar />
-            <Outlet />
+            <div className="">
+                <Outlet />
+            </div>
             <Footer />
         </div>
     );

@@ -7,7 +7,8 @@ export default {
     extend: {
       colors: {
         primary: '#5A67D8',
-        secondary: '#12CCAB'
+        secondary: '#12CCAB',
+        // primaryGradient: 'bg-gradient-to-r from-indigo-300 to-purple-500',
       },
 
       // fontFamily: {
