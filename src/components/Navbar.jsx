@@ -3,7 +3,7 @@ import { RiMenuLine } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const setNavLinkActiveClass = ({ isActive }) => ` duration-100 ${isActive ? "custom-gradient focus:text-white" : "hover:text-purple-600 hover:bg-transparent active:bg-gradient-to-r active:from-indigo-300 active:to-purple-500"}`;
+    const setNavLinkActiveClass = ({ isActive }) => `duration-100 ${isActive ? "custom-gradient focus:text-white" : "hover:text-purple-600 hover:bg-transparent active:bg-gradient-to-r active:from-indigo-300 active:to-purple-500"}`;
 
     const [menuVisible, setMenuVisible] = useState(false);
 
@@ -26,9 +26,10 @@ const Navbar = () => {
         <div className="bg-gray-100">
             <div className="navbar max-w-[1440px]  mx-auto py-5">
                 <div className="navbar-start ">
+
                     {/* mobile menu starts */}
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden" onClick={toggleMenu}>
+                        <div tabIndex={0} role="button" className="px-3 lg:hidden hover:scale-y-95" onClick={toggleMenu}>
                             <RiMenuLine size={22} />
                         </div>
                         <ul
@@ -40,6 +41,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* mobile menu ends */}
+
                     <Link to='/' className="text-xl md:text-3xl font-bold">Career Hub</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
